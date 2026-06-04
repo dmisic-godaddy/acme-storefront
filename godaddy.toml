@@ -1,0 +1,23 @@
+name        = "Shipping Calculator"
+version     = "2.0.0"
+client_id   = "bfbb2af4-290e-442f-a901-07dd6732bd68"
+description = "Real-time shipping rate calculation with delivery estimates"
+url         = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
+proxy_url   = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
+
+[[actions]]
+name        = "commerce.shipping-rates.calculate"
+url         = "/api/shipping-rates"
+
+[[subscriptions.webhook]]]
+name        = "order-notifications"
+events      = ["commerce.order.created"]
+url         = "/webhooks/orders"
+
+[[extensions.checkout]]
+name   = "Shipping Info Banner"
+handle = "ShippingInfoBanner"
+source = "extensions/shipping-info-banner/src/index.tsx"
+
+[[extensions.checkout.targets]]
+target = "checkout.form.shipping.after"
