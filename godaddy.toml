@@ -19,6 +19,5 @@ name   = "Shipping Info Banner"
 handle = "shipping-info-banner"
 source = "src/index.tsx"
            
-
 [[extensions.checkout.targets]]
 target = "checkout.form.shipping.after"
