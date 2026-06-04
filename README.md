@@ -49,14 +49,7 @@ npm run build && npm start
 
 ## UI Extension
 
-The extension must be built and hosted at a publicly accessible URL before it appears in checkout.
-
-```bash
-npm run build:extension
-# Output: dist/extensions/shipping-info-banner.js
-```
-
-Host `dist/extensions/shipping-info-banner.js` and update `url` in `godaddy.toml` if needed (currently configured for the platform to resolve via `source` directly).
+The extension source is at `extensions/shipping-info-banner/src/index.tsx`. GoDaddy's build pipeline bundles and hosts it on their CDN — no local build step required.
 
 ## Authentication
 
