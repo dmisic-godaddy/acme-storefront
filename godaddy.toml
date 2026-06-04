@@ -9,7 +9,7 @@ proxy_url   = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
 name        = "commerce.shipping-rates.calculate"
 url         = "/api/shipping-rates"
 
-[[subscriptions.webhook]]]
+[[subscriptions.webhook]]
 name        = "order-notifications"
 events      = ["commerce.order.created"]
 url         = "/webhooks/orders"
@@ -17,7 +17,7 @@ url         = "/webhooks/orders"
 [[extensions.checkout]]
 name   = "Shipping Info Banner"
 handle = "ShippingInfoBanner"
-source = "extensions/shipping-info-banner/src/index.tsx"
+source = "/extensions/shipping-info-banner/src/index.tsx"
 
 [[extensions.checkout.targets]]
 target = "checkout.form.shipping.after"
