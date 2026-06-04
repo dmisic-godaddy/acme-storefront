@@ -16,8 +16,8 @@ url         = "/webhooks/orders"
 
 [[extensions.checkout]]
 name   = "Shipping Info Banner"
-handle = "ShippingInfoBanner"
-source = "extensions/shipping-info-banner/src/index.tsx"
+handle = "shipping-info-banner"
+source = "src/index.tsx"
            
 
 [[extensions.checkout.targets]]
