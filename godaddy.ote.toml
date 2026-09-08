@@ -5,6 +5,12 @@ description = "Real-time shipping rate calculation with delivery estimates"
 url         = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
 proxy_url   = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
 
+authorization_scopes = [
+    "commerce.order:read",
+    "commerce.product:read",
+    "commerce.customer:read"
+]
+
 [[actions]]
 name        = "commerce.shipping-rates.calculate"
 url         = "/api/shipping-rates"
