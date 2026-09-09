@@ -6,6 +6,10 @@ url         = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
 proxy_url   = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
 
 authorization_scopes = [
+    "commerce.business:read",
+    "commerce.business:update",
+    "commerce.store:read",
+    "commerce.channel:read",
     "commerce.order:read",
     "commerce.product:read",
     "commerce.customer:read"
