@@ -2,14 +2,6 @@ name        = "Shipping Calculator"
 version     = "3.0.0"
 client_id   = "bc8cb490-6832-4857-8bd5-2ceb5cd7a588"
 description = "Real-time shipping rate calculation with delivery estimates"
-url         = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
-proxy_url   = "https://aniya-interligamentous-unprofusely.ngrok-free.dev"
-
-authorization_scopes = [
-    "commerce.order:read",
-    "commerce.product:read",
-    "commerce.customer:read"
-]
 
 [[actions]]
 name        = "commerce.shipping-rates.calculate"
